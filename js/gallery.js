@@ -74,6 +74,7 @@ const createGalleryItem = (image) => {
   linkElement.classList.add("gallery-link");
   linkElement.href = image.original;
   const imageElement = document.createElement("img");
+  imageElement.classList.add("gallery-image");
   imageElement.src = image.preview;
   imageElement.alt = image.description;
   imageElement.setAttribute("data-source", image.original);
